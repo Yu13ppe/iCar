@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>iCar</title>
+</head>
+
+<body>
+  <div class="container p-12">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">iCar</h1>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="card">
+            <div class="card-body">
+              <form id="carForm">
+                <input type="hidden" id="carId">
+                <div class="form-group">
+                  <input type="text" id="modelo" placeholder="Modelo" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="date" id="carAno" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="mark" placeholder="Marca" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="type" placeholder="Tipo" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="image" placeholder="Imagen (URL)" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="description" cols="30" rows="10" class="form-control"
+                    placeholder="Descripción"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block text-center">
+                  Guardar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card my-4" id="datosResult">
+            <div class="card-body">
+              <ul id="container">
+                <img src="" alt="">
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h1 class="text-center">Autos Registrados</h1>
+          </div>
+          <table class="table table-responsive table-sm">
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>Modelo</td>
+                <td>Año</td>
+                <td>Marca</td>
+                <td>Tipo</td>
+                <td>Imagen</td>
+                <td>Descripción</td>
+                <td>Acciones</td>
+              </tr>
+            </thead>
+            <tbody id="carBody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

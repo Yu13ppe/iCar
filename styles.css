@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: url('background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    /* Actualizado de absolute a fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 58, 64, 0.5);
+    z-index: -1;
+}
+
+.card {
+    background-color: rgba(52, 58, 64, 0.5);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin: 10px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+#carForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#carForm input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(209, 209, 209, 0.9);
+}
+
+#carForm textarea {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(209, 209, 209, 0.9);
+}
+
+#carForm input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#carForm button[type="submit"] {
+    background-color: #3a2d68;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+    background-color: rgba(52, 58, 64, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border: none;
+    border-radius: 10px;
+}
+
+table thead {
+    background-color: #3a2d68;
+    color: #fff;
+    font-weight: bold;
+}
+
+table thead tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #3a2d68;
+}
+
+table tbody tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr td:last-child {
+    text-align: center;
+}
+
+table tbody tr td:last-child button {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+table tbody tr td:last-child button:hover {
+    background-color: #fff;
+    color: #3a2d68;
+    transition: all 0.5s ease;
+}
